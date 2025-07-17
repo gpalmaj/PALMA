@@ -52,37 +52,28 @@ a {
   color: #fefcc1;
 }
 
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.plugin-card {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 10px;
-  min-width: 250px;
-  max-width: 300px;
-  flex-shrink: 0;
-  padding: 1rem;
-  text-align: left;
-  color: #eee;
-}
-
-.plugin-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.price {
-  font-weight: bold;
-  color: #ff6666;
-}
-
 .shop-bar-specific {
   gap: 11.4rem;
+}
+
+.home-button {
+  color: #fefcc1;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 5%;
+  transform: translateX(-50%);
+  filter: blur(1px);
+}
+
+.thin-bar {
+  box-shadow: 4px 4px 0 #fefcc1;
+  position: absolute;
+  bottom: 30%;
+  left: 50%; /* Center origin */
+  transform: translateX(-50%);
+  filter: blur(3px);
+  width: 90%;
+  height: 30px; /* Thin */
+  background-color: #ed1c32; /* Or #fff, #ff6666, etc */
+  opacity: 0.7; /* Optional transparency */
 }

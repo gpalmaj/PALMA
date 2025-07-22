@@ -1,5 +1,6 @@
 <!-- core/templates/landing.html -->
 <!doctype html>
+{% load static %}
 <html lang="en">
   {% include 'base.html' %}
   <body>
@@ -16,7 +17,7 @@
           class="icon-svg"
         />
       </a>
-      <a href="mailto:your@email.com">
+      <a href="https://open.spotify.com/artist/5arfYeRczWtKre7ptGoEXp">
         <img
           src="{% static 'icons/youtube-icon.svg' %}"
           alt="Email"
@@ -24,7 +25,19 @@
         />
       </a>
     </div>
-
-    <a class="home-button" href="/">home</a>
+<div class="track-grid">
+  {% for track in tracks %}
+    <div class="track">
+      <a href="{{ track.external_urls.spotify }}" target="_blank">
+        <img src="{{ track.album.images.0.url }}" alt="{{ track.name }}" class="album-art"/>
+        <p><strong>{{ track.name }}</strong></p>
+        <p>
+          {% for artist in track.artists %}
+            {{ artist.name }}{% if not forloop.last %}, {% endif %}
+          {% endfor %}
+        </p>
+      </a>
+    </div>
+  {% endfor %}    <a class="home-button" href="/">home</a>
   </body>
 </html>

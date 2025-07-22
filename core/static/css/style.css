@@ -24,7 +24,6 @@ nav {
 
 nav a,
 a {
-  filter: blur(1px);
   font-size: 1.5rem;
   font-family: "Orbitron", cursive;
   margin-bottom: 0.2rem;
@@ -36,11 +35,17 @@ a {
   font-size: 13rem;
 }
 
+.mini-title {
+  font-size: 3.5rem;
+}
+
 .shop-bar {
+  filter: blur(1px);
   gap: 6.5rem;
 }
 
 .showcase-bar {
+  filter: blur(1px);
   gap: 11.4rem;
 }
 
@@ -53,14 +58,15 @@ a {
 }
 
 .shop-bar-specific {
+  filter: blur(1px);
   gap: 11.4rem;
 }
 
 .home-button {
   color: #fefcc1;
   font-size: 1.5rem;
-  position: absolute;
-  bottom: 5%;
+  position: fixed;
+  bottom: 3%;
   transform: translateX(-50%);
   filter: blur(1px);
 }
@@ -76,4 +82,69 @@ a {
   height: 30px; /* Thin */
   background-color: #ed1c32; /* Or #fff, #ff6666, etc */
   opacity: 0.7; /* Optional transparency */
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 18rem;
+  margin-top: 12rem;
+}
+
+.page-links {
+}
+
+.icon-svg {
+  filter: blur(1px);
+  width: 85px;
+  height: 85px;
+
+  transition: transform 0.2s ease;
+}
+
+.icon-svg:hover {
+  transform: scale(1.01);
+
+  filter: blur(1px);
+}
+
+.track {
+  width: 260px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  filter: none !important;
+}
+
+.track:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  filter: none !important;
+}
+
+.track-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.track p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+}
+
+.album-art {
+  width: 100%;
+  height: auto;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }

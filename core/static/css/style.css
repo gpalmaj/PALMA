@@ -67,6 +67,7 @@ a {
   font-size: 1.5rem;
   position: fixed;
   bottom: 3%;
+  left: 6%;
   transform: translateX(-50%);
   filter: blur(1px);
 }
@@ -91,9 +92,6 @@ a {
   margin-top: 12rem;
 }
 
-.page-links {
-}
-
 .icon-svg {
   filter: blur(1px);
   width: 85px;
@@ -103,20 +101,19 @@ a {
 }
 
 .icon-svg:hover {
-  transform: scale(1.01);
+  transform: scale(1.1);
 
   filter: blur(1px);
 }
 
 .track {
-  width: 260px;
+  width: 280px;
   text-align: center;
-  padding: 10px;
+  padding: 7px;
   border-radius: 8px;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
-  filter: none !important;
 }
 
 .track:hover {
@@ -130,15 +127,8 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 6rem;
-  margin: 5rem auto;
+  margin: 9rem auto;
   max-width: 1200px;
-}
-
-.track p {
-  color: #fff;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  line-height: 1.2;
 }
 
 .album-art {
@@ -147,4 +137,17 @@ a {
   transition:
     transform 0.3s ease,
     filter 0.3s ease;
+}
+
+.song-title {
+  color: #ed1c32;
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+  filter: blur(1px);
+}
+
+.artist-list {
+  color: #fefcc1;
+  filter: blur(0.7px);
+  font-size: 0.9rem;
 }

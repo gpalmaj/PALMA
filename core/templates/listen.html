@@ -30,14 +30,17 @@
     <div class="track">
       <a href="{{ track.external_urls.spotify }}" target="_blank">
         <img src="{{ track.album.images.0.url }}" alt="{{ track.name }}" class="album-art"/>
-        <p><strong>{{ track.name }}</strong></p>
-        <p>
+        <p class = "song-title"><strong>{{ track.name }}</strong></p>
+        <p class = "artist-list">
           {% for artist in track.artists %}
             {{ artist.name }}{% if not forloop.last %}, {% endif %}
           {% endfor %}
         </p>
       </a>
     </div>
-  {% endfor %}    <a class="home-button" href="/">home</a>
-  </body>
+
+  {% endfor %}    
+<a class="home-button" href="/">home</a>
+
+	</body>
 </html>

@@ -12,3 +12,9 @@ def samples(request):
 
 def plugins(request):
     return render(request, "plugins.html")
+
+def listen(request):
+    return render(request, "listen.html")
+
+def contact(request):
+    return render(request, "contact.html")

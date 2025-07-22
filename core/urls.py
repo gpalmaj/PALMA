@@ -10,4 +10,6 @@ urlpatterns = [
     path('plugins/', views.plugins, name='plugins'),
 
     path('samples/', views.samples, name='samples'),
+    path('contact/', views.contact, name = 'contact'),
+    path('listen/', views.listen, name = 'listen'),
 ]

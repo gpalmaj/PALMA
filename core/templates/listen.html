@@ -1,0 +1,30 @@
+<!-- core/templates/landing.html -->
+<!doctype html>
+<html lang="en">
+  {% include 'base.html' %}
+  <body>
+    <h1 class="mini-title">PALMA</h1>
+
+    <div class="icon-links">
+      <a
+        href="https://open.spotify.com/artist/5arfYeRczWtKre7ptGoEXp"
+        target="_blank"
+      >
+        <img
+          src="{% static 'icons/spotify-icon.svg' %}"
+          alt="spotify"
+          class="icon-svg"
+        />
+      </a>
+      <a href="mailto:your@email.com">
+        <img
+          src="{% static 'icons/youtube-icon.svg' %}"
+          alt="Email"
+          class="icon-svg"
+        />
+      </a>
+    </div>
+
+    <a class="home-button" href="/">home</a>
+  </body>
+</html>
